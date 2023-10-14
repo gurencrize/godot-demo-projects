@@ -1,17 +1,17 @@
-[gd_resource type="TileSet" load_steps=2 format=2]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://c2kr7yvpne3r0"]
 
-[ext_resource path="res://grid_movement/grid/lines/grid_lines.png" type="Texture2D" id=1]
+[ext_resource type="Texture2D" uid="uid://5auocr6oymg0" path="res://grid_movement/grid/lines/grid_lines.png" id="1"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ilr25"]
+texture = ExtResource("1")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
 
 [resource]
-
-0/name = "Grass"
-0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 64, 64 )
-0/is_autotile = false
-0/occluder_offset = Vector2( 32, 32 )
-0/navigation_offset = Vector2( 32, 32 )
-0/shapes = [  ]
-
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "grid_lines"
+terrain_set_0/terrain_0/color = Color(0.501961, 0.537255, 0.564706, 1)
+sources/0 = SubResource("TileSetAtlasSource_ilr25")

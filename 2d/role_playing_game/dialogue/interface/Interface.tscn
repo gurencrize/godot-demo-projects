@@ -1,19 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://k13b30k70hu3"]
 
-[ext_resource path="res://theme/theme.tres" type="Theme" id=1]
-[ext_resource path="res://dialogue/interface/Interface.gd" type="Script" id=2]
+[ext_resource type="Theme" uid="uid://dh2px4xx6k8ga" path="res://theme/theme.tres" id="1"]
+[ext_resource type="Script" path="res://dialogue/interface/Interface.gd" id="2"]
 
 [node name="Dialogue" type="Panel"]
 offset_top = 544.0
 offset_right = 1280.0
 offset_bottom = 720.0
-theme = ExtResource( 1 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+theme = ExtResource("1")
+script = ExtResource("2")
 
 [node name="Name" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 16.0
 offset_right = 1072.0
@@ -22,6 +20,7 @@ text = "Name"
 scroll_active = false
 
 [node name="Text" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 64.0
 offset_right = 1064.0
@@ -29,6 +28,7 @@ offset_bottom = 152.0
 text = "Dialogue Text"
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1104.0
 offset_top = 32.0
 offset_right = 1264.0

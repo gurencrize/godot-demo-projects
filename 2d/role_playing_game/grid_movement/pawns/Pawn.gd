@@ -6,11 +6,10 @@ enum CellType { ACTOR, OBSTACLE, OBJECT }
 @export var type: CellType = CellType.ACTOR
 
 var active = true:
-	set(value):
-		# TODO: Manually copy the code from this method.
-		set_active(value)
+    set(value):
+        active = value
+        set_process(value)
+        set_process_input(value)
 
 func set_active(value):
-	active = value
-	set_process(value)
-	set_process_input(value)
+    active = value
